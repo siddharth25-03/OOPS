@@ -1,0 +1,44 @@
+•	By default the value of the object if printed is NULL 
+•	This.name :Here the this is replaced with the name of the object which is calling
+•	New keyword creates the object
+•	Student kunal = new Student()
+Here the Student() is the constructor which is being called or function you can say 
+•	Instance Variables: Variables which are inside a class
+•	Constructor overloading: having multiple constructors
+
+•	Calling a constructor from another Constructor 
+
+•	Student one= new Student()
+Student two=one
+If we make changes in one or two they will be reflected in both of them
+
+•	Final is not modifyable but only for primitive data types
+When  a non primitive is final, you cannot reassign it
+	
+•	Garbage collector using finalize 
+We can only tell in finalize what to do when a file is being destroyed, when we create large number of object to it
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+•	Packages are just folders
+•	If the files are in same folder we don’t have to import 
+•	A static variable is independent of the object created like population
+Instead of using this.population, we will use human.population (human is class name) 
+We can access the static variables using the name of the class itself 
+As the class is created before the object is created, so we can access the object directly using class name 
+The static method or variable belong to the class and do not belong to the object
+We don’t need an object to run static stuff, they can be run with the help of a class 
+IN SHORT STATIC IS NOT DEPENDENT ON OBJECT MAKING
+•	Why is main as Public static void main 
+It is static as if it was not static we would need an object to run the main, as it is inside the class. But how can we create an object of the main before running the program as main is the first thing which is run.
+•	A static method can only access other static method
+•	A static block is run only once when the first object is created
+Static{
+	B=A*5;
+}
+•	Singleton class only creates only 1 object 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
