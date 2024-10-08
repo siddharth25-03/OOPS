@@ -40,5 +40,50 @@ Static{
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
+Inheritance: As properties of the parent class as well as their own characteristic( which is of child class ) 
+
+If we want to initialise the values present in parent class JUST ABOVE the child class
+we will use super keyword 
+super(l,w,h)
+
+agar private hai toh we can only use it inside a class ( agar parent mai private hai kuch toh child can't access it )  
+
+If we write Box box = new BoxWeight() it is right
+and we can use all the methods which are only inside the box not boxweight
+
+
+BUT IF WE WRITE  BoxWeight box= new Box() THIS IS NOT RIGHT AS THE BOX() CANNOT MODIFY THE WEIGHT PROPERTY OF THE BOXWEIGHT AS ONLY THE CHILD ( BOXWEIGHT) HAS THE PROPERTY OF THE WEIGHT AND THE box IS REFERENCED TO BOX()
+
+multiple inheritance is not allowed in java
+
+heirarchiel inheritance 
+
+POLYMORPHSIM: MANY + WAYS TO REPRESENT
+
+TYPES OF POLYMORPHISM 
+1) COMPILE TIME/ STATIC: ACHEIVED VIA METHOD OVERLOADING
+
+SAME NAME OF METHODS BUT HAVE SOMETHING DIFFERENT LIKE DIFFERENT NUMBER OF PARAMETERS, DIFFERENT RETURN TYPES ETC
+
+2) RUNTIME/ DYNAMIC: ACHEIVED VIA METHOD OVERRIDING
+
+IF THE PARENT AND THE CHILD METHOD HAVE THE METHOD WITH SAME NAME THEN THE METHOD IN THE CHILD CLASS WILL BE CALLED AS IT IS OVERRIDDEN 
+
+IF WE DO
+shapes circle= new circle()
+circle.area() 
+this will also call the circle class ke andr wla area as it is overridden by the child class
+
+IF WE USE THE FINAL KEYWORD IN THE PARENT CLASS METHOD THEN WE CANNOT OVERRIDE THAT METHOD IN THE CHILD CLASS
+
+WE CAN ALSO PREVENT INHERITANCE USING FINAL CLASS 
+
+WE ALSO CANNOT OVVERIDE STATIC METHODS, AS THE OVERRIDING DEPENEDS ON THE OBJECT ( circle() ) BUT AS WE KNOW STATIC METHODS DOES NOT DEPEND ON THE OBJECT, SO JO STATIC METHOD IS IN PARENT WILL ONLY GET PRINTED
+
+encapsulation: one inside another 
+
+abstraction: hiding the details and showing only valuable information 
+
+
 
 
