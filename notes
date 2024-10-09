@@ -101,6 +101,36 @@ no modifier │   +   │    +    │    +     │          │
 ────────────┼───────┼─────────┼──────────┼──────────┼──────────────────────────
 private     │   +   │         │          │          │
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+IF WE HAVE AN ABSTRACT PARENT CLASS, THEN THE CHILD WHICH EXTENDS THE PARENT NEEDS TO OVERRIDE ALL THE ABSTRACT METHODS WHICH ARE IN PARENT CLASS 
+
+abstract void partner() : abstract method in parent class
+
+FOR ABSTRACT CLASSES YOU CANNOT CREATE OBJECTS DIRECTLY
+
+IF EVEN 1 OF THE METHODS IS ABSTRACT THEN THE CLASS NEEDS TO BE ABSTRACT
+
+FINAL VARIABLES ALWAYS NEEDS TO BE INTIALIZED
+
+IMPLEMENTS IS USED FOR INTERFACES AND INTERFACES CAN DO MULTIPLE INHERITANCE
+
+Interface is like class but not completely. it is like an abstract class.
+By default functions are public and abstract in interface.
+variables are final and static by default in interface.
+
+IF INTERFACE DOES NOT CARE ABOUT THE NUMBER OF CHILDREN THAT IMPLEMENT IT 
+
+WE CAN ALWAYS DO 
+
+PARENT VARIABLE = NEW CHILD()
+
+IF WE HAVE AN INTERFACE A HAVING FUN() METHOD AND WE HAVE ANOTHER CLASS B WHICH HAS GREET() METHOD
 
 
+INTERFACE TO INTERFACE WE HAVE TO WRITE EXTENDS
+INTERFACE TO CLASS WE HAVE TO WRITE IMPLEMENTS
 
+IF THE CLASS B EXTENDS CLASS A 
+AND IF WE IMPLEMENT CLASS B IN SOME CLASS 
+SO THAT CLASS NEEDS TO OVERRIDE CLASS A METHODS AS WELL AS CLASS B METHODS
