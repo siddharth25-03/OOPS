@@ -73,6 +73,8 @@ IF WE DO
 shapes circle= new circle()
 circle.area() 
 this will also call the circle class ke andr wla area as it is overridden by the child class
+but if we write suppose circle.a and the a variable is in the circle class, it will result in an error as it will not be able to access the a variable as it is in the circle class and we have shape instance
+
 
 IF WE USE THE FINAL KEYWORD IN THE PARENT CLASS METHOD THEN WE CANNOT OVERRIDE THAT METHOD IN THE CHILD CLASS
 
