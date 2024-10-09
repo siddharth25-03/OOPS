@@ -84,6 +84,21 @@ encapsulation: one inside another
 
 abstraction: hiding the details and showing only valuable information 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+IF WE USE PRIVATE VARIABLES INSIDE A CLASS IT CAN BE ONLY ACCESSED IN THE CLASS ITSELF, AND IF SOME OTHER CLASS WANTS TO MODIFY IT WE CAN DO IT USING GETTER AND SETTER 
+
+            │ Class │ Package │ Subclass │ Subclass │ World
+            │       │         │(same pkg)│(diff pkg)│(diff pkg & not subclass)
+────────────┼───────┼─────────┼──────────┼──────────┼──────────────────────────
+public      │   +   │    +    │    +     │     +    │   +
+────────────┼───────┼─────────┼──────────┼──────────┼──────────────────────────
+protected   │   +   │    +    │    +     │     +    │
+────────────┼───────┼─────────┼──────────┼──────────┼──────────────────────────
+no modifier │   +   │    +    │    +     │          │
+────────────┼───────┼─────────┼──────────┼──────────┼──────────────────────────
+private     │   +   │         │          │          │
+
 
 
 
