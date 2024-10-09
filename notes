@@ -134,3 +134,30 @@ INTERFACE TO CLASS WE HAVE TO WRITE IMPLEMENTS
 IF THE CLASS B EXTENDS CLASS A 
 AND IF WE IMPLEMENT CLASS B IN SOME CLASS 
 SO THAT CLASS NEEDS TO OVERRIDE CLASS A METHODS AS WELL AS CLASS B METHODS
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+EXCEPTION HANDLING
+CHECKED (compiler can detect ) and UNCHECKED ( compiler cannot detect, during runtime. for eg: dividing a number by zero)
+
+using try ( to try an expression ) and catch block (to catch an exception if it occurs)
+we also have a finally block which does not care if a exception is thrown or not and runs anyway
+
+catch(Exception e){
+	System.out.println("exception found")
+} 
+
+
+we can also throw an exception using the throw keyword
+throw new Exception("your own message")
+
+and we have to use the throws keyword in the method which can throw an exception
+
+
+creating a custom exception
+class Myexception extends exception{
+	Myexception(){
+		super(message) # as this is covered in the parent class 
+	}
+} 
+
